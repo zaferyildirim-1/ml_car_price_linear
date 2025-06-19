@@ -69,6 +69,12 @@ pip install -r requirements.txt
 python download_data.py      # or follow DATA.md
 jupyter notebook analysis.ipynb
 
+## 4. Freezing Dependencies
+
+Once you’ve installed everything you need, lock down the exact versions by exporting them to `requirements.txt`. With UV you can do:
+
+```bash
+uv pip freeze > requirements.txt
 
 
 
