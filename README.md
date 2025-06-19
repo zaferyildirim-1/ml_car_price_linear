@@ -1,5 +1,5 @@
 
-# ml_car_price_linear
+# LINEAR REGRESSION MACHINE LEARNING MODEL for CAR PRICE PREDICTION
 
 Predicting Used Car Prices with Linear Models
 
@@ -20,11 +20,11 @@ Our goal is to balance predictive performance (R²) against error metrics (MAE, 
      - Remove price outliers via 1.5 × IQR by model.  
 2. **Filtered dataset**  
    - `linear_m2`:  
-     - On top of `lm1` filtering, remove global price outliers outside [7 500 €, 70 000 €].  
+     - On top of `lm1` filtering, remove global price outliers outside [7 500 €, 70 000 €] in the first notebook 
    - **New filtering**:  
-     - Similarly, remove global price outliers outside [3 500 €, 40 000 €].
+     - Similarly, remove global price outliers outside [3 500 €, 40 000 €] in the modified notebook
 
-> **Note:** raw data is not included here. See [DATA.md](DATA.md) for download instructions (or run `download_data.py`).
+> **Note:** raw data is included here : sample_model_data.csv).
 
 ## Models & Results
 
@@ -53,7 +53,7 @@ Our goal is to balance predictive performance (R²) against error metrics (MAE, 
 - **lm1**  
   - Model-by-model 1.5 × IQR outlier removal
 - **linear_m2**  
-  - lm1 filtering + global price filter     (!!!! 7 500 €–70 000 € on original;       !!!! 3 500 €–40 000 € on new)
+  - lm1 filtering + global price filter     (!!!! 7 500 €–70 000 € on original;       !!!! 3 500 €–40 000 € on new/modified)
   - 
 - **ridge_m / lasso_m / elastic_m**  
   - Regularized linear models tuned via cross-validation
@@ -62,20 +62,7 @@ Our goal is to balance predictive performance (R²) against error metrics (MAE, 
 
 ## How to Run
 
-```bash
-git clone https://github.com/yourusername/ml_car_price_linear.git
-cd ml_car_price_linear
-pip install -r requirements.txt
-python download_data.py      # or follow DATA.md
-jupyter notebook analysis.ipynb
-
-## 4. Freezing Dependencies
-
-Once you’ve installed everything you need, lock down the exact versions by exporting them to `requirements.txt`. With UV you can do:
-
-```bash
-uv pip freeze > requirements.txt
-
+check requirements.txt file for relevant modules and libraries etc.
 
 
 
