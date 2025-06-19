@@ -1,0 +1,13 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual env
+.venv/
+env/
+venv/
+
+# Data
+*.csv
+data/
